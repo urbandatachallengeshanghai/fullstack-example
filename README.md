@@ -1,7 +1,19 @@
 # Hackathon example
 
-## Running
+## Overview
 
+Cover the full flow as easily as possible of building a data driven application:
+
+* data import
+* analysis
+* machine learning model creation
+* database
+* web API
+* web frontend
+
+Install and setup should be minimal (beyond setting up Docker)
+
+## Running
 
 Use docker:
 
