@@ -58,9 +58,21 @@ postgres://postgres:1234@db/db
 
 in the SQL client, run: ```sql/mobike-loader.sql```
 
+This will load the mobike data into a table
+
 ## Data analysis
 
-TODO: using Jupyter with database here
+Access https://localhost
+
+Connecting to the database:
+
+```python
+import psycopg2 as pg
+import pandas.io.sql as pd
+conn = pg.connect(host="db", database="db",user="postgres", password="1234")
+df = pd.read_sql('SELECT * FROM urbandata.mobike LIMIT 10', conn)
+df.head()
+```
 
 ## Developing API queries
 
