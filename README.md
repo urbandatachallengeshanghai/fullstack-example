@@ -24,9 +24,11 @@ cd docker-postgresql-postgraphile
 
 Follow the instructions in the README to setup Docker.
 
+![docker](docs/console.png)
+
 ## Setting up the datasets
 
-We've modified the docker image to mount ```./data``` on ```/data``` so you can put the datasets there
+We've modified the docker image to mount ```./data``` on ```/data``` so you can put the datasets in the current directory to have access to it within docker.
 
 ```
 mv  ~/Downloads/Urban\ Data\ Hackathon data/ data/
@@ -54,6 +56,8 @@ postgres://postgres:1234@db/db
 * password: 1234
 * database: db
 
+![dbeaver](docs/dbeaver.png)
+
 ## importing data
 
 in the SQL client, run: ```sql/mobike-loader.sql```
@@ -74,10 +78,18 @@ df = pd.read_sql('SELECT * FROM urbandata.mobike LIMIT 10', conn)
 df.head()
 ```
 
+![jupyter](docs/jupyter.png)
+
+
 ## Developing API queries
 
 Access: http://0.0.0.0:5000/graphiql
 
+![postgraphiql](docs/postgraphiql.png)
+
+
 ## Creating a frontend
 
 edit/open/reload ```hackathon.html``` in the browser
+
+![frontend](docs/webfrontend.png)
