@@ -1,4 +1,4 @@
-create table urbandata.mobike(
+create table urbandata.raw_mobike(
 	orderid text,
 	bikeid text,
 	userid text,
@@ -13,6 +13,6 @@ create table urbandata.mobike(
 
 -- 1,023,603 rows
 -- about 90 seconds to import from raw file
-COPY urbandata.mobike 
+COPY urbandata.raw_mobike 
 	FROM '/data/UTSEUS-MOBIKE-shanghai_full.csv'
 	with CSV HEADER;

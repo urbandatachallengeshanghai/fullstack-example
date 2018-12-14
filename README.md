@@ -60,6 +60,12 @@ postgres://postgres:1234@db/db
 
 ![dbeaver](docs/dbeaver.png)
 
+psql command-line interface can be started with:
+
+```
+docker exec -it psql psql -U postgres
+```
+
 ## importing data
 
 in the SQL client, run: ```sql/mobike-loader.sql```
