@@ -10,13 +10,19 @@ git clone git@github.com:urbandatachallengeshanghai/docker-postgresql-postgraphi
 cd docker-postgresql-postgraphile
 ```
 
+Follow the instructions in the README to setup Docker.
+
+## Setting up the datasets
+
 We've modified the docker image to mount ```./data``` on ```/data``` so you can put the datasets there
 
 ```
 mv  ~/Downloads/Urban\ Data\ Hackathon data/ data/
 ```
 
-Running:
+## Running the system
+
+Running the containers:
 
 ```
 docker-compose up
