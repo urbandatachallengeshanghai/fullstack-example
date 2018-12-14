@@ -1,0 +1,37 @@
+<html>
+    <script type="text/javascript">
+    const query = `
+        {
+            allMobikes(first:10) {
+                edges {
+                    node {
+                    orderid
+                    bikeid
+                    userid
+                    startTime
+                    startLocationX
+                    startLocationY
+                    endTime
+                    endLocationX
+                    endLocationY
+                    track
+                    }
+                }
+            } 
+        }
+    `;
+    fetch('http://localhost:5000/graphql', {
+        body: JSON.stringify({query}),
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json'}
+    })
+    .then(res => res.json())
+    .then(res => {
+        console.log(res.data);
+        document.getElementById('data').innerText = JSON.stringify(res.data, null, 4);
+    })
+    </script>
+    <pre>
+        <div id="data"></div>
+    </pre>
+</html>
