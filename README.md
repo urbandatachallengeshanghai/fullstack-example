@@ -32,13 +32,19 @@ database is here:
 postgres://postgres:1234@db/db
 ```
 
+* username: postgres
+* password: 1234
+* database: db
+
+## importing data
+
+in the SQL client, run: ```sql/mobike-loader.sql```
+
 ## Data analysis
 
 TODO: using Jupyter with database here
 
 ## Developing API queries
-
-You can find the username and password in the file.
 
 Access: http://0.0.0.0:5000/graphiql
 
