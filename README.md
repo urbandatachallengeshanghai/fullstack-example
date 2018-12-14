@@ -13,6 +13,8 @@ Cover the full flow as easily as possible of building a data driven application:
 
 Install and setup should be minimal (beyond setting up Docker)
 
+![dockercloud](docs/dockercloud.png)
+
 ## Running
 
 Use docker:
@@ -64,7 +66,7 @@ in the SQL client, run: ```sql/mobike-loader.sql```
 
 This will load the mobike data into a table
 
-## Data analysis
+## Data analysis with Jupyter
 
 Access https://localhost
 
@@ -80,6 +82,13 @@ df.head()
 
 ![jupyter](docs/jupyter.png)
 
+
+## Data analysis with RapidMiner
+
+https://rapidminer.com/
+
+![rapidminer-db](docs/rapidminer-db.png)
+![rapidminer-query](docs/rapidminer-query.png)
 
 ## Developing API queries
 
